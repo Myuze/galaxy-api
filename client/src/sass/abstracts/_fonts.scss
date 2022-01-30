@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+// Font Families
+$apps-title: 'Shadows Into Light', cursive;
+$apps-subtitle: 'Ubuntu', sans-serif;
+
+// Base Font Sizes
+$h1-default: 2.5rem;
+
+// Links Font Families
+$app-links: 'Varela Round', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+$shadows: 'Shadows Into Light', cursive;
+
+// Font Sizes
+$font-size: calc(10px + 2vmin);
+
+// About Font
+$about-p-font-size: 1.5rem;
+
+// Tech Font
+$tier-font-size: 2rem;
+
+// Header Font
+$head-font-fam: $ubuntu;
+$head-font-size: $font-size;
+
+// Footer Font
+$footer-font-fam: $shadows;
+$footer-font-size: $font-size;
+
+// Card Font
+$card-font-size: $font-size;
+$card-font-fam: $ubuntu;

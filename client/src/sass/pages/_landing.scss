@@ -1,0 +1,75 @@
+@use '../abstracts/' as *;
+
+.landing {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  .section {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.demo-container {
+  width: 100%;
+  background-color: $dark;
+  font-family: $ubuntu;
+  font-size: 1.5rem;
+  padding: 5%;
+  color: $lightest
+}
+
+.section-1, .section-2, .section-3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  img, p {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.new-list {
+  width: 100%;
+  background-color: $darkest;
+  color: $lightest;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  h1 {
+    font-family: $ubuntu;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  button {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-1, .section-2, .section-3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-1, .section-2, .section-3 {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .section-1, .section-2, .section-3 {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+}

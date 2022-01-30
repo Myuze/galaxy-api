@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+.footer {
+  margin-top: auto;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+  color: $footer-txt-clr;
+  background: $footer-bg;
+  font-size: $footer-font-size;
+  
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    gap: 2rem;
+    justify-content: center;
+    list-style-type: none;
+  }
+}

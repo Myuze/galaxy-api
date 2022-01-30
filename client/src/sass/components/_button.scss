@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+.btn {
+  color: $btn-clr;
+  background-color: $btn-bg-clr;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  font-family: $app-links;
+}

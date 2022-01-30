@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+
+.nav {
+  display: flex;
+  flex: 1 1 50%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-family: $apps-subtitle;
+  border-radius: 4px;
+  color: $nav-txt-clr;
+  
+  .nav-link {
+    padding: 4px;
+    border: 1px;
+    border-radius: 4px;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  .active {
+    color: white;
+    box-shadow: 2px 4px 8px $nav-txt-clr;
+  }
+
+  li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  .navigation {
+    font-family: $apps-subtitle;
+    width: 100vw;
+    background-color: $darkest;
+    color: $lightest;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav {
+    flex-flow: column wrap;
+  }
+}

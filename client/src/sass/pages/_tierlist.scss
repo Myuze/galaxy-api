@@ -1,0 +1,36 @@
+.tier-outer-container {
+    display: flex;
+    align-content: center;
+}
+
+.tier-container {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    width: 50%;
+    height: 300px
+}
+
+.tier-title {
+    padding: 8px;
+}
+
+.tier-list-items {
+    padding: 8px;
+}
+
+[data-rbd-droppable-id="column-1"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// styling for word cloud sub-items
+[data-rbd-draggable-context-id="1"] {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: lightblue;
+}
+
+[id='Add Your Interests'] {
+    font-size: 20px;
+    padding: 10px 15px;
+}

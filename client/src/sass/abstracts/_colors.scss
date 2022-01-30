@@ -1,0 +1,78 @@
+// Base Palette
+$darkest: #6f2dbd;
+$dark: #a663cc;
+$lighter: #b298dc;
+$light: #b8d0eb;
+$lightest: #b9faf8;
+$background-fade: linear-gradient(
+  to right top,
+  #6f2dbd,
+  #7c44c4,
+  #8858ca,
+  #956cd0,
+  #a17fd5,
+  #9b93e3,
+  #98a5ed,
+  #9ab6f4,
+  #8fcafc,
+  #90dcfd,
+  #a0ecfb,
+  #b9faf8
+);
+$soft-fade: linear-gradient(
+  to right top,
+  #6f2dbd,
+  #6662d6,
+  #6d8be4,
+  #8bafea,
+  #b8d0eb
+);
+
+// Header Colors
+$head-bg: $background-fade;
+$head-txt-clr: black;
+
+// Nav Colors
+$nav-bg: $dark;
+$nav-txt-clr: black;
+
+// Hero Colors
+$hero-bg: $soft-fade;
+$hero-text-clr: black;
+
+// Footer Colors
+$footer-txt-clr: $soft-fade;
+$footer-bg: black;
+
+// App Colors
+$app-bg-color-fb: $background-fade;
+$app-bg-color: rgba(0, 238, 255, 0.5);
+
+// Button Colors
+$btn-clr: white;
+$btn-bg-clr: black;
+$red: red;
+
+$btn-clr: $darkest;
+$btn-bg-clr: $light;
+
+// Tier Ranks Styling
+#S {
+  background-color: $darkest;
+}
+
+#A {
+  background-color: $dark;
+}
+
+#B {
+  background-color: $lighter;
+}
+
+#C {
+  background-color: $light;
+}
+
+#D {
+  background-color: $lightest;
+}

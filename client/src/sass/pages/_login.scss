@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+
+.base {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  background-image: $background-fade;
+  border-radius: 15px;
+}
+.loginHeader {
+  font-size: 30px;
+  font-family: $apps-title;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  margin-top: 2em;
+  display: grid;
+  grid-template-rows: 25% 25% 25%;
+}
+.form-group {
+  padding: 1%;
+  margin: 5px;
+}
+input {
+  display: flex;
+  width: 80%;
+}
+.usernameTitle {
+  font-family: $app-links;
+}
+.emailTitle {
+  font-family: $app-links;
+}
+.passwordTitle {
+  font-family: $app-links;
+}
+
+.loginFooter {
+  padding: 1%;
+}

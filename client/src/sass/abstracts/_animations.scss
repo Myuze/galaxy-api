@@ -1,0 +1,34 @@
+// Tech Stack Animation Vars
+
+$lang-delay: 1000ms;
+$lang-ratio: .5;
+
+// Animations Speeds
+$lang-transition: 2000ms;
+$lang-delay-diff: 500ms;
+
+// Languages Initial Position
+$lang-start-pos: 10rem;
+
+@for $i from 1 through 3 {
+  .languages li:nth-child(#{$i}) {
+    opacity: 0;
+    transform: translateY($lang-start-pos);
+    animation: topToBottom $lang-transition ease (#{$lang-delay * $i * $lang-ratio}) forwards;
+  }
+}
+
+@for $i from 1 through 6 {
+  .tech-stack li:nth-child(#{$i}) {
+    opacity: 0;
+    transform: translateY($lang-start-pos);
+    animation: topToBottom $lang-transition ease (#{$lang-delay * $i * $lang-ratio}) forwards;
+  }
+}
+
+@keyframes topToBottom {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
