@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/baseserver', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/galaxy-api', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
