@@ -1,3 +1,4 @@
 const User = require('./User');
+const Apod = require('./Apod');
 
-module.exports = { User };
+module.exports = { User, Apod };

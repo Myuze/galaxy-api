@@ -15,11 +15,25 @@ const typeDefs = gql`
     user: User
   }
 
+  scalar Date
+
+  type Apod {
+    copyright: String
+    date: Date
+    explanation: String
+    hdurl: String
+    media_type: String
+    service_version: String
+    title: String
+    url: String
+  }
+
   type Query {
     users: [User]!
     user(username: String!): User
     # Because we have the context functionality in place to check a JWT and decode its data, we can use a query that will always find and return the logged in user's data
     me: User
+    getApod: Apod
   }
 
   type Mutation {

@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Apod } = require('../models');
 const { signToken } = require('../utils/auth');
+const { getApod } = require('../controllers/galaxy-api-controller');
 
 const resolvers = {
   Query: {
@@ -16,7 +17,10 @@ const resolvers = {
         return User.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError('You need to be logged in!');
-    }
+    },
+    getApod: async () => {
+      return getApod();
+    },
   },
 
   Mutation: {
@@ -65,7 +69,7 @@ const resolvers = {
         );
       }
       throw new AuthenticationError('You need to be logged in!');
-    }
+    },
   },
 };
 
